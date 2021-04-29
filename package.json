@@ -1,0 +1,39 @@
+{
+  "name": "smatt-lab.divi-it-up",
+  "description": "divi-it-up",
+  "version": "0.0.0",
+  "author": "msaun008",
+  "repository": {
+    "type": "git",
+    "url": "Add github URL here"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "aha-cli": "^1.9.2"
+  },
+  "ahaExtension": {
+    "cspSources": [],
+    "contributes": {
+      "views": {
+        "diviItUp": {
+          "title": "DiviItUp Board",
+          "host": "page",
+          "entryPoint": "src/views/board.tsx",
+          "location": {
+            "menu": "Work"
+          }
+        },
+
+        "diviItUpVoting": {
+          "title": "DiviItUp Voting",
+          "entryPoint": "src/views/voting.tsx",
+          "host": "attribute",
+          "recordTypes": [
+            "Feature",
+            "Requirement"
+          ]
+        }
+      }
+    }
+  }
+}
