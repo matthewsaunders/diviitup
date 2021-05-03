@@ -83,9 +83,9 @@ const DivitItUpVoting = ({ record, existingVote }) => {
       vote
     }
 
-    await record.setExtensionField(EXTENSION_ID, key, payload);
-
     setVote(payload);
+
+    await record.setExtensionField(EXTENSION_ID, key, payload);
   }
 
   return (
