@@ -1,6 +1,6 @@
 # divi-it-up
 
-This [Aha! Develop](https://www.aha.io/develop/overview) extension provides an interavtive way for a team to divide up for the work from current iteration amongst its team members.
+This [Aha! Develop](https://www.aha.io/develop/overview) extension provides an interactive way for a team to divide up for the work from current iteration amongst its team members.
 
 ---
 
