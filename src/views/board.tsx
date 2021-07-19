@@ -199,9 +199,8 @@ const RecordDetails = ({ record, users, userVotes, forceUpdate }) => {
       <h1 className="RecordDetails__title">
         { record.referenceNum + ' ' + record.name }
       </h1>
-      <p>
-        { record.description }
-      </p>
+      <div dangerouslySetInnerHTML={record.description.htmlBody}>
+      </div>
       <UsersList record={record} users={users} userVotes={userVotes} forceUpdate={forceUpdate} />
     </div>
   )
@@ -322,7 +321,9 @@ const DiviItUpBoard = ({}) => {
                 id
                 name
                 path
-                description
+                description {
+                  htmlBody
+                }
                 assignedToUser {
                   id
                   avatarUrl
@@ -337,7 +338,9 @@ const DiviItUpBoard = ({}) => {
                 id
                 name
                 path
-                description
+                description {
+                  htmlBody
+                }
                 assignedToUser {
                   id
                   avatarUrl
